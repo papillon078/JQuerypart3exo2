@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 2</title>
+</head>
+<body>
+  <label for='counter'>nombre de clics</label>
+  <input type='text' id='counter' name='counter' />
+  <button type="button" name="button" id="incrementing" >incrémenter</button>
+  <button type="button" name="button" id="decrementing" >décrémenter</button>
+
+
+  <script type="text/javascript" src='assets/lib/jquery-3.4.1.min.js'></script>
+  <script>
+  $('#counter').val('0');
+  let x=0;
+  $('#incrementing').click(function(){
+    x++;
+    $('#counter').val(x);
+  });
+  $('#decrementing').click(function(){
+    x--;
+    $('#counter').val(x);
+  });
+
+
+</script>
+</body>
+</html>
